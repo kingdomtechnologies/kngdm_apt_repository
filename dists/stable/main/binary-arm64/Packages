@@ -1,0 +1,1197 @@
+Package: ansible
+Version: 2.9.6+dfsg-1
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 56658
+Depends: python3-cryptography, python3-jinja2, python3-yaml, python3:any, openssh-client | python3-paramiko, python3-crypto, python3-distutils, python3-dnspython, python3-httplib2, python3-netaddr
+Recommends: python3-argcomplete, python3-jmespath, python3-kerberos, python3-libcloud, python3-selinux, python3-winrm, python3-xmltodict
+Suggests: cowsay, sshpass
+Filename: ./ansible_2.9.6+dfsg-1_all.deb
+Size: 5794032
+MD5sum: 5529484b690803aa249616984275447b
+SHA1: 92ba3729a48f446d101a14e8102f11c42b00cb53
+SHA256: aaa666e6d3c37bb6fc1d71cb4e1b3020fa02f9981bfa62ed2d38aa2d69547748
+Section: admin
+Priority: optional
+Homepage: https://www.ansible.com
+Description: Configuration management, deployment, and task execution system
+ Ansible is a radically simple model-driven configuration management,
+ multi-node deployment, and remote task execution system. Ansible works
+ over SSH and does not require any software or daemons to be installed
+ on remote nodes. Extension modules can be written in any language and
+ are transferred to managed machines automatically.
+Original-Maintainer: Harlan Lieberman-Berg <hlieberman@debian.org>
+
+Package: build-essential
+Version: 12.8ubuntu1.1
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 21
+Depends: libc6-dev | libc-dev, gcc (>= 4:9.2), g++ (>= 4:9.2), make, dpkg-dev (>= 1.17.11)
+Filename: ./build-essential_12.8ubuntu1.1_arm64.deb
+Size: 4664
+MD5sum: 8d83631de4cd78f84998424739e2c8ed
+SHA1: 23ff363076ea9c3dad8c941590fcc08e1e352f83
+SHA256: 5968be1535b3a6798948f75b59fab3c64bef29565061d2dd61aad2e89746f5cf
+Section: devel
+Priority: optional
+Description: Informational list of build-essential packages
+ If you do not plan to build Debian packages, you don't need this
+ package.  Starting with dpkg (>= 1.14.18) this package is required
+ for building Debian packages.
+ .
+ This package contains an informational list of packages which are
+ considered essential for building Debian packages.  This package also
+ depends on the packages on that list, to make it easy to have the
+ build-essential packages installed.
+ .
+ If you have this package installed, you only need to install whatever
+ a package specifies as its build-time dependencies to build the
+ package.  Conversely, if you are determining what your package needs
+ to build-depend on, you can always leave out the packages this
+ package depends on.
+ .
+ This package is NOT the definition of what packages are
+ build-essential; the real definition is in the Debian Policy Manual.
+ This package contains merely an informational list, which is all
+ most people need.   However, if this package and the manual disagree,
+ the manual is correct.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: can-utils
+Version: 2018.02.0-1ubuntu1
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 517
+Depends: libc6 (>= 2.17)
+Filename: ./can-utils_2018.02.0-1ubuntu1_arm64.deb
+Size: 111456
+MD5sum: a45b1e24ca3fdaa14920d1693a9e99a9
+SHA1: 4135c6875067f8f28bc289f63de27ded745fcdc8
+SHA256: 0709189f82a2d0b2c071bcd23e27ae69526b81ba34a9d522d625104a07b88340
+Section: net
+Priority: optional
+Homepage: https://github.com/linux-can/can-utils
+Description: SocketCAN userspace utilities and tools
+ CAN is a message-based network protocol designed for vehicles originally
+ created by Robert Bosch GmbH. SocketCAN is a set of open source CAN drivers
+ and a networking stack contributed by Volkswagen Research to the Linux kernel.
+ .
+ This package contains some userspace utilities for Linux SocketCAN subsystem.
+ .
+ Basic tools to display, record, generate and replay CAN traffic:
+ candump, canplayer, cansend, cangen, cansniffer.
+ CAN access via IP sockets: canlogserver, bcmserver, socketcand.
+ CAN in-kernel gateway configuration: cangw.
+ CAN bus measurement and testing: canbusload, can-calc-bit-timing, canfdtest.
+ ISO-TP (ISO 15765-2 2016) tools: isotpsend, isotprecv, isotpsniffer,
+ isotpdump, isotpserver, isotpperf, isotptun.
+ CAN log file converters: asc2log, log2asc, log2long.
+ CAN Serial Line Discipline configuration (for slcan driver):
+ slcan_attach, slcand, slcanpty.
+ SAE J1939 tools and demo: jacd, jspy, jsr, testj1939.
+Original-Maintainer: Alexander GQ Gerasiov <gq@debian.org>
+
+Package: curl
+Version: 7.68.0-1ubuntu2.25
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 396
+Depends: libc6 (>= 2.17), libcurl4 (= 7.68.0-1ubuntu2.25), zlib1g (>= 1:1.1.4)
+Filename: ./curl_7.68.0-1ubuntu2.25_arm64.deb
+Size: 156992
+MD5sum: 991abc68961c9b9dba4bbc32809bdda1
+SHA1: ecfbb7e37926fc2c223dee027ffb14d144e6e210
+SHA256: 3f56cd6c0ff049e319793a422b90a7cde9003259000aa10d10a51d7bed66dc55
+Section: web
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://curl.haxx.se
+Description: command line tool for transferring data with URL syntax
+ curl is a command line tool for transferring data with URL syntax, supporting
+ DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3,
+ POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form
+ based upload, proxies, cookies, user+password authentication (Basic, Digest,
+ NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a
+ busload of other useful tricks.
+Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
+
+Package: dbus-x11
+Source: dbus
+Version: 1.12.16-2ubuntu2.3
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 153
+Depends: dbus, libc6 (>= 2.17), libdbus-1-3 (= 1.12.16-2ubuntu2.3), libx11-6
+Provides: dbus-session-bus
+Filename: ./dbus-x11_1.12.16-2ubuntu2.3_arm64.deb
+Size: 21744
+MD5sum: 671e159ea9330ddfec7bccf6adb3d0eb
+SHA1: 50f4c332ee043fcdf5e207b8ac762455a4f8ae18
+SHA256: 68a9eaae07eb11a13a1315b9eac07bb81cd2e1014e9a75983e5348a2b5c1d9ad
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://dbus.freedesktop.org/
+Description: simple interprocess messaging system (X11 deps)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ This package contains the dbus-launch utility which is necessary for
+ packages using a D-Bus session bus.
+ .
+ See the dbus description for more information about D-Bus in general.
+Original-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+
+Package: git
+Version: 1:2.25.1-1ubuntu3.14
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 35428
+Depends: libc6 (>= 2.28), libcurl3-gnutls (>= 7.56.1), libexpat1 (>= 2.0.1), libpcre2-8-0 (>= 10.22), zlib1g (>= 1:1.2.0), perl, liberror-perl, git-man (>> 1:2.25.1), git-man (<< 1:2.25.1-.)
+Recommends: ca-certificates, patch, less, ssh-client
+Suggests: gettext-base, git-daemon-run | git-daemon-sysvinit, git-doc, git-el, git-email, git-gui, gitk, gitweb, git-cvs, git-mediawiki, git-svn
+Breaks: bash-completion (<< 1:1.90-1), cogito (<= 0.18.2+), dgit (<< 5.1~), git-buildpackage (<< 0.6.5), git-core (<< 1:1.7.0.4-1.), gitosis (<< 0.2+20090917-7), gitpkg (<< 0.15), gitweb (<< 1:1.7.4~rc1), guilt (<< 0.33), openssh-client (<< 1:6.8), stgit (<< 0.15), stgit-contrib (<< 0.15)
+Replaces: git-core (<< 1:1.7.0.4-1.), gitweb (<< 1:1.7.4~rc1)
+Provides: git-completion, git-core
+Filename: ./git_1%3a2.25.1-1ubuntu3.14_arm64.deb
+Size: 4459692
+MD5sum: 1d9d9d6a0e73b624d27411826f0e49df
+SHA1: 3a93ecc7f42193a08e059c7c77a166343f7a58f2
+SHA256: 4e45dca089cbda77d7d8094205d6a41193c8c6aadfff5eca072253ba8a172b79
+Section: vcs
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the git main components with minimal dependencies.
+ Additional functionality, e.g. a graphical user interface and revision
+ tree visualizer, tools for interoperating with other VCS's, or a web
+ interface, is provided as separate git* packages.
+Original-Maintainer: Jonathan Nieder <jrnieder@gmail.com>
+
+Package: gnupg2
+Version: 2.2.19-3ubuntu2.4
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 50
+Depends: gnupg (>= 2.2.19-3ubuntu2.4)
+Filename: ./gnupg2_2.2.19-3ubuntu2.4_all.deb
+Size: 5316
+MD5sum: 1912fd922d37d6f8547c7bc778900f9f
+SHA1: 1f54744bcfe923481acbf120b5b8d4cdb75a6ac7
+SHA256: fc8cfe2f0c36101e2e21a4281ec8a998a7b35c565a8e0743a85f17a52b543286
+Section: oldlibs
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnupg.org/
+Description: GNU privacy guard - a free PGP replacement (dummy transitional package)
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC4880.
+ .
+ This is a dummy transitional package that provides symlinks from gpg2
+ to gpg.
+Original-Maintainer: Debian GnuPG Maintainers <pkg-gnupg-maint@lists.alioth.debian.org>
+
+Package: libgl1-mesa-glx
+Source: mesa
+Version: 21.2.6-0ubuntu0.1~20.04.2
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 70
+Depends: libgl1, libglx-mesa0
+Filename: ./libgl1-mesa-glx_21.2.6-0ubuntu0.1~20.04.2_arm64.deb
+Size: 5536
+MD5sum: 51a183963b709e6d3429ff5b67fe1820
+SHA1: 3975ce9f6209a525338667d611ab27dd5867a8ce
+SHA256: 7bf0f70d96f6c5dda5f3dcea249fcd07f8373079e21940e1a417a31e574526c7
+Section: oldlibs
+Priority: optional
+Multi-Arch: same
+Homepage: https://mesa3d.org/
+Description: transitional dummy package
+ This is a transitional dummy package, it can be safely removed.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libglu1-mesa
+Source: libglu
+Version: 9.0.1-1build1
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 415
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libgl1, libstdc++6 (>= 5)
+Conflicts: libglu1, mesag3 (<< 5.0.0-1), xlibmesa3
+Replaces: libglu1
+Provides: libglu1
+Filename: ./libglu1-mesa_9.0.1-1build1_arm64.deb
+Size: 145672
+MD5sum: 4aa00bff8154046e7675a827f395f774
+SHA1: 97a6378fa585d7b472f7bccd261a723766f52106
+SHA256: 507654a6b14a234ee089446df6e23b89bc7038ad2acaa7f7d28b6a259c6722db
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Mesa OpenGL utility library (GLU)
+ GLU offers simple interfaces for building mipmaps; checking for the
+ presence of extensions in the OpenGL (or other libraries which follow
+ the same conventions for advertising extensions); drawing
+ piecewise-linear curves, NURBS, quadrics and other primitives
+ (including, but not limited to, teapots); tesselating surfaces; setting
+ up projection matrices and unprojecting screen coordinates to world
+ coordinates.
+ .
+ On Linux, this library is also known as libGLU or libGLU.so.1.
+ .
+ This package provides the SGI implementation of GLU provided by the
+ Mesa project (ergo the "-mesa" suffix).
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libusb-dev
+Source: libusb
+Version: 2:0.1.12-32
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 232
+Depends: libusb-0.1-4 (= 2:0.1.12-32), libc6-dev | libc-dev
+Filename: ./libusb-dev_2%3a0.1.12-32_arm64.deb
+Size: 29932
+MD5sum: 19bbe588141dab9805d3118eb1189bb7
+SHA1: 7b9015899b35add7c34c34cb5121c53145e26309
+SHA256: 8493d03b76e4338899f7eee9525ae833773f61ba084ed64fc1322205aefeb9a1
+Section: libdevel
+Priority: optional
+Homepage: http://www.linux-usb.org/
+Description: userspace USB programming library development files
+ Library for programming USB applications without the knowledge
+ of Linux kernel internals.
+ .
+ This package contains what you need for compiling sources that
+ use this library in your own code.
+Original-Maintainer: Aurelien Jarno <aurel32@debian.org>
+
+Package: lsb-release
+Source: lsb
+Version: 11.1.0ubuntu2
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 66
+Depends: python3:any, distro-info-data
+Recommends: apt
+Filename: ./lsb-release_11.1.0ubuntu2_all.deb
+Size: 10568
+MD5sum: 1150ded71500f4765a72add53e586636
+SHA1: c7a011e264f877e4ca8bb89997d9dbf61174372d
+SHA256: 085abfef45c0aba423c522c26bc583a2c1b24efbf8983e2a782904cca71d05b2
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://wiki.linuxfoundation.org/lsb/start
+Description: Linux Standard Base version reporting utility
+ The Linux Standard Base (http://www.linuxbase.org/) is a standard
+ core system that third-party applications written for Linux can
+ depend upon.
+ .
+ The lsb-release command is a simple tool to help identify the Linux
+ distribution being used and its compliance with the Linux Standard Base.
+ LSB conformance will not be reported unless the required metapackages are
+ installed.
+ .
+ While it is intended for use by LSB packages, this command may also
+ be useful for programmatically distinguishing between a pure Debian
+ installation and derived distributions.
+Original-Maintainer: Debian sysvinit maintainers <debian-init-diversity@chiark.greenend.org.uk>
+
+Package: mosh
+Version: 1.3.2-2.1build3
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 751
+Pre-Depends: dpkg (>= 1.15.7.2)
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libprotobuf17, libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2), libtinfo6 (>= 6), libutempter0 (>= 1.1.5), zlib1g (>= 1:1.1.4), openssh-client
+Recommends: libio-socket-ip-perl
+Filename: ./mosh_1.3.2-2.1build3_arm64.deb
+Size: 179464
+MD5sum: 86643bfb0763ae1ab614d03ade646104
+SHA1: bd9f9db4831390d96ca34d7f0d055636c765decd
+SHA256: 7128678944d6229fee1c843f086a710befb3034d665e6771b9d22f72694d3cb6
+Section: net
+Priority: optional
+Homepage: https://mosh.org
+Description: Mobile shell that supports roaming and intelligent local echo
+ Mosh is a remote terminal application that supports:
+   - intermittent network connectivity,
+   - roaming to different IP address without dropping the connection, and
+   - intelligent local echo and line editing to reduce the effects
+     of "network lag" on high-latency connections.
+Original-Maintainer: Keith Winstein <keithw@mit.edu>
+
+Package: nano
+Version: 4.8-1ubuntu1.1
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 852
+Depends: libc6 (>= 2.27), libncursesw6 (>= 6), libtinfo6 (>= 6)
+Suggests: hunspell
+Conflicts: pico
+Breaks: nano-tiny (<< 2.8.6-2)
+Replaces: nano-tiny (<< 2.8.6-2), pico
+Filename: ./nano_4.8-1ubuntu1.1_arm64.deb
+Size: 261188
+MD5sum: 2a5ea4326dbf5df225222408ea3bb07a
+SHA1: 00974e44a9ef128c2b6c8c0c4a7b5c54877ecb05
+SHA256: 7c70965a45cb6d0c45579a09d35e18b2b24b59a769c6fb737b7ed58c578d27bf
+Section: editors
+Priority: important
+Homepage: https://www.nano-editor.org/
+Description: small, friendly text editor inspired by Pico
+ GNU nano is an easy-to-use text editor originally designed as a replacement
+ for Pico, the ncurses-based editor from the non-free mailer package Pine
+ (itself now available under the Apache License as Alpine).
+ .
+ However, GNU nano also implements many features missing in Pico, including:
+  - undo/redo
+  - line numbering
+  - syntax coloring
+  - soft-wrapping of overlong lines
+  - selecting text by holding Shift
+  - interactive search and replace (with regular expression support)
+  - a go-to line (and column) command
+  - support for multiple file buffers
+  - auto-indentation
+  - tab completion of filenames and search terms
+  - toggling features while running
+  - and full internationalization support
+Original-Maintainer: Jordi Mallach <jordi@debian.org>
+
+Package: novnc
+Version: 1:1.0.0-2
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 4601
+Depends: adduser, python3-novnc, python3-numpy, websockify
+Suggests: python-nova
+Filename: ./novnc_1%3a1.0.0-2_all.deb
+Size: 803320
+MD5sum: 70b7f8d9c319951863ce87e6e682672c
+SHA1: ec096f6add9a6080eb796e09e706f8ca48c02e4b
+SHA256: 2f90776f41cc7621d943c6c45304ee8e48796d2b7d3de1ed0f74fbc8c92a7793
+Section: web
+Priority: optional
+Homepage: https://github.com/novnc/noVNC
+Description: HTML5 VNC client - daemon and programs
+ noVNC is a HTML5 VNC (WebSockets, Canvas) with encryption (wss://) support
+ client that runs well in any modern browser including mobile browsers
+ (iPhone/iPad and Android). More than 16 companies/projects have integrated
+ noVNC into their products including Ganeti Web Manager, OpenStack, and
+ OpenNebula.
+ .
+ This package contains the daemon and programs.
+Original-Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
+
+Package: python-is-python3
+Source: what-is-python (4)
+Version: 3.8.2-4
+Architecture: all
+Maintainer: Dimitri John Ledkov <xnox@ubuntu.com>
+Installed-Size: 10
+Depends: python3
+Breaks: python, python-is-python2, python-is-python2-but-deprecated
+Replaces: python, python-is-python2, python-is-python2-but-deprecated
+Filename: ./python-is-python3_3.8.2-4_all.deb
+Size: 2364
+MD5sum: 72d89bf720c220a183e9fa666d42073d
+SHA1: 4f5aa631c3c0efa778fe29cb97e5bd249775c96d
+SHA256: 3d9f8a6c0d9c0726d4ffa0e63805bf6e358a55e79d66fdb325d4df6d920a3b89
+Section: python
+Priority: optional
+Multi-Arch: allowed
+Description: symlinks /usr/bin/python to python3
+ In Ubuntu, all python packages use explicit python3 or python2
+ interpreter and do not use unversioned /usr/bin/python at all. Some
+ third-party code is now predominantly python3 based, yet may use
+ /usr/bin/python.
+ .
+ This is a convenience package which ships a symlink to point
+ the /usr/bin/python interpreter at the current default python3. It may
+ improve compatibility with other modern systems, whilst breaking some
+ obsolete or 3rd-party software.
+ .
+ No packages may declare dependencies on this package.
+Cnf-Ignore-Commands: python
+
+Package: python3-catkin-tools
+Version: 0.9.4-1
+Architecture: all
+Maintainer: William Woodall <william@osrfoundation.org>
+Installed-Size: 597
+Depends: python3-osrf-pycommon, python3-pkg-resources, python3-yaml, python3:any, python3-setuptools, python3-catkin-pkg-modules
+Conflicts: python-catkin-tools
+Filename: ./python3-catkin-tools_0.9.4-1_all.deb
+Size: 159698
+MD5sum: 9fe6a50725ba097ee083695586a605d0
+SHA1: f7bf1a87ca8ffa057eab35bc5924dfab65b31c2d
+SHA256: 3da675896f45eed1a95b2770ad75692b201f9c6fc9b387603823372fa19f8268
+Section: python
+Priority: optional
+Homepage: https://catkin-tools.readthedocs.org/
+Description: Command line tools for working with catkin.
+ Provides command line tools for working with catkin.
+
+Package: python3-pip
+Source: python-pip
+Version: 20.0.2-5ubuntu1.11
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1025
+Depends: ca-certificates, python3-distutils, python3-setuptools, python3-wheel, python-pip-whl (= 20.0.2-5ubuntu1.11), python3:any
+Recommends: build-essential, python3-dev (>= 3.2)
+Breaks: python-pip
+Replaces: python-pip
+Provides: pip
+Filename: ./python3-pip_20.0.2-5ubuntu1.11_all.deb
+Size: 230528
+MD5sum: f395c492ac677f85909c6163102a0a21
+SHA1: 421a1f2f732dde42ee31262fcf18a189aefd5847
+SHA256: b9aaf13dd0f9a4ded5957295732358486f7b1f22fa73db5dd215ba155d88f9f7
+Section: python
+Priority: optional
+Homepage: https://pip.pypa.io/en/stable/
+Description: Python package installer
+ pip is the Python package installer.  It integrates with virtualenv, doesn't
+ do partial installs, can save package state for replaying, can install from
+ non-egg sources, and can install from version control repositories.
+ .
+ This is the Python 3 version of the package.
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+
+Package: python3-rosdep
+Version: 0.25.1-1
+Architecture: all
+Maintainer: Tully Foote, Ken Conley <tfoote@osrfoundation.org>
+Installed-Size: 21
+Depends: python3-importlib-metadata | python3 (>> 3.8), python3-yaml, python3:any (>= 3.6~), python3-rosdep-modules (>= 0.25.1)
+Conflicts: python-rosdep, python-rosdep2, python3-rosdep2
+Filename: ./python3-rosdep_0.25.1-1_all.deb
+Size: 3492
+MD5sum: 0d66d2131b75915c72ee8fa8351d8a2d
+SHA1: 58e39fd3ddaf9cd0ebec4175bc643de7083d3dd5
+SHA256: 151327ba72a3ced42b551959e92064d900a3eed2a6d2a9faa84eb76745f23599
+Section: python
+Priority: optional
+Homepage: http://wiki.ros.org/rosdep
+Description: rosdep package manager abstraction tool for ROS
+ Command-line tool for installing system dependencies on a variety of platforms.
+
+Package: python3-vcstool
+Version: 0.3.0-1
+Architecture: all
+Maintainer: Dirk Thomas <web@dirk-thomas.net>
+Installed-Size: 172
+Depends: python3-pkg-resources, python3-yaml, python3:any (>= 3.5~), python3-setuptools
+Conflicts: python-vcstool
+Filename: ./python3-vcstool_0.3.0-1_all.deb
+Size: 23112
+MD5sum: cf792e719ce489a3b4415adf074ce6fc
+SHA1: 9694641a637bbb85de9328a22f71677b4bf08c72
+SHA256: 20a0f8090bbd5453ba8e14161e2ccdca18cffdf2e56dd50a7d425863b3e6e5cb
+Section: python
+Priority: optional
+Homepage: https://github.com/dirk-thomas/vcstool
+Description: vcstool provides a command line tool to invoke vcs commands
+ vcstool enables batch commands on multiple different vcs repositories. Currently it supports git, hg, svn and bzr.
+
+Package: python3-venv
+Source: python3-defaults
+Version: 3.8.2-0ubuntu2
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 11
+Depends: python3.8-venv (>= 3.8.2-1~), python3 (= 3.8.2-0ubuntu2), python3-distutils (>= 3.8.2-1~)
+Filename: ./python3-venv_3.8.2-0ubuntu2_arm64.deb
+Size: 1228
+MD5sum: 718007b082f98e7527892374c4dcc7ea
+SHA1: 2a22acba9c4c6738563c415c67c1c780065d8ced
+SHA256: 7383c225ea63f4bfd39500362c8c1c920f855f6a060097baf81d07144336c2a0
+Section: python
+Priority: optional
+Multi-Arch: allowed
+Homepage: https://www.python.org/
+Description: pyvenv-3 binary for python3 (default python3 version)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python 3 version (currently v3.8).
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: ros-noetic-amcl
+Version: 1.17.3-1focal.20250411.074105
+Architecture: arm64
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Installed-Size: 1073
+Depends: libboost-thread1.71.0, libc6 (>= 2.29), libgcc-s1 (>= 3.0), libstdc++6 (>= 9), ros-noetic-diagnostic-updater, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-nav-msgs, ros-noetic-rosbag, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-std-srvs, ros-noetic-tf2, ros-noetic-tf2-msgs, ros-noetic-tf2-ros
+Filename: ./ros-noetic-amcl_1.17.3-1focal.20250411.074105_arm64.deb
+Size: 240884
+MD5sum: bdba85e731fec57b07e65f3cf296e4df
+SHA1: 4ac62e61b189c3f7bca8ef3849b69e2bd9d042ae
+SHA256: bc825a3243b3f6f895671e0b312385765fda9286131132598231a98d6a093584
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/amcl
+Description: amcl is a probabilistic localization system for a robot moving in 2D.
+ It implements the adaptive (or KLD-sampling) Monte Carlo localization approach (as described by Dieter Fox), which uses a particle filter to track the pose of a robot against a known map. This node is derived, with thanks, from Andrew Howard's excellent 'amcl' Player driver.
+
+Package: ros-noetic-base-local-planner
+Version: 1.17.3-1focal.20250411.082407
+Architecture: arm64
+Maintainer: Michael Ferguson <mfergs7@gmail.com>
+Installed-Size: 1089
+Depends: libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libeigen3-dev, ros-noetic-angles, ros-noetic-costmap-2d, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-nav-core, ros-noetic-nav-msgs, ros-noetic-pluginlib, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-tf2, ros-noetic-tf2-ros, ros-noetic-visualization-msgs, ros-noetic-voxel-grid
+Filename: ./ros-noetic-base-local-planner_1.17.3-1focal.20250411.082407_arm64.deb
+Size: 220140
+MD5sum: 5ce566edd0b14cfaa18e7dc86a454fcf
+SHA1: eaa5743450afa591e284138f2d127f960e02c122
+SHA256: da11236e4db0156f7a4428a97bcacef1858bf7729bdd6518f252844f0adf3512
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/base_local_planner
+Description: This package provides implementations of the Trajectory Rollout and Dynamic Window approaches to local robot navigation on a plane.
+ Given a plan to follow and a costmap, the controller produces velocity commands to send to a mobile base. This package supports both holonomic and non-holonomic robots, any robot footprint that can be represented as a convex polygon or circle, and exposes its configuration as ROS parameters that can be set in a launch file. This package's ROS wrapper adheres to the BaseLocalPlanner interface specified in the nav_core package.
+
+Package: ros-noetic-carrot-planner
+Version: 1.17.3-1focal.20250411.083041
+Architecture: arm64
+Maintainer: Aaron Hoy <ahoy@fetchrobotics.com>
+Installed-Size: 134
+Depends: libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libeigen3-dev, ros-noetic-angles, ros-noetic-base-local-planner, ros-noetic-costmap-2d, ros-noetic-nav-core, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-tf2, ros-noetic-tf2-ros
+Filename: ./ros-noetic-carrot-planner_1.17.3-1focal.20250411.083041_arm64.deb
+Size: 34148
+MD5sum: 594a61cb87a2afd29009df7049cab1e7
+SHA1: bd4e50126ee11bfe6174f62c2748cc3c95850801
+SHA256: 7b0f2949375c9ca4934173b103f8bb92e04e45bac8faad18c2730c692ce62663
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/carrot_planner
+Description: This planner attempts to find a legal place to put a carrot for the robot to follow.
+ It does this by moving back along the vector between the robot and the goal point.
+
+Package: ros-noetic-control-box-rst
+Version: 0.0.7-1focal.20200608.170315
+Architecture: arm64
+Maintainer: Christoph Rösmann <christoph.roesmann@tu-dortmund.de>
+Installed-Size: 15423
+Depends: coinor-libipopt-dev, libeigen3-dev
+Filename: ./ros-noetic-control-box-rst_0.0.7-1focal.20200608.170315_arm64.deb
+Size: 1229876
+MD5sum: da4fa373ae9bcf5837e61930a18fa8d3
+SHA1: 27dafce261cdc0d61c199d32cc35267d6b9de3b1
+SHA256: 1fbf26d336bcb11593548097bd4116d58a1ff241a96a8e790bf64f9cf6f27f94
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/control_box_rst
+Description: The control_box_rst package provides C++ libraries for predictive control, direct optimal control, optimization and simulation.
+
+Package: ros-noetic-costmap-2d
+Version: 1.17.3-1focal.20250411.081152
+Architecture: arm64
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Installed-Size: 2333
+Depends: libboost-filesystem1.71.0, libboost-thread1.71.0, libc6 (>= 2.29), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 9), libtinyxml2-6a (>= 5.0.0), libeigen3-dev, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-laser-geometry, ros-noetic-map-msgs, ros-noetic-message-filters, ros-noetic-message-runtime, ros-noetic-nav-msgs, ros-noetic-pluginlib, ros-noetic-rosconsole, ros-noetic-roscpp, ros-noetic-rostest, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-tf2, ros-noetic-tf2-ros, ros-noetic-visualization-msgs, ros-noetic-voxel-grid
+Filename: ./ros-noetic-costmap-2d_1.17.3-1focal.20250411.081152_arm64.deb
+Size: 408668
+MD5sum: ab7f603b7dfd9d3639ef9f1ae0a70a1e
+SHA1: 1d9b2ac78143dcc098f13d2d1f056f01fdc6d7a7
+SHA256: 1cf9d6bcf450511007f3f24c58fea889d0bb4572a378f02a2d52fdf1c6795c6c
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/costmap_2d
+Description: This package provides an implementation of a 2D costmap that takes in sensor data from the world, builds a 2D or 3D occupancy grid of the data (depending on whether a voxel based implementation is used), and inflates costs in a 2D costmap based on the occupancy grid and a user specified inflation radius.
+ This package also provides support for map_server based initialization of a costmap, rolling window based costmaps, and parameter based subscription to and configuration of sensor topics.
+
+Package: ros-noetic-costmap-converter
+Version: 0.0.13-1focal.20250411.081923
+Architecture: arm64
+Maintainer: Christoph Rösmann <christoph.roesmann@tu-dortmund.de>
+Installed-Size: 1814
+Depends: libboost-filesystem1.71.0, libboost-thread1.71.0, libc6 (>= 2.29), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libopencv-core4.2 (>= 4.2.0+dfsg), libopencv-features2d4.2 (>= 4.2.0+dfsg), libopencv-highgui4.2 (>= 4.2.0+dfsg), libopencv-imgproc4.2 (>= 4.2.0+dfsg), libopencv-video4.2 (>= 4.2.0+dfsg), libstdc++6 (>= 9), libtinyxml2-6a (>= 5.0.0), ros-noetic-costmap-2d, ros-noetic-cv-bridge, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-std-msgs
+Filename: ./ros-noetic-costmap-converter_0.0.13-1focal.20250411.081923_arm64.deb
+Size: 315768
+MD5sum: 3c8481ed426132cf375391e5bf9e0b09
+SHA1: 95c4e9772de9fc5ef4de8d259eabf6efb9d79c24
+SHA256: 9b6737981710d8793a8c7e05920135f44c24d30fca5f2b09245de145e517e643
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/costmap_converter
+Description: A ros package that includes plugins and nodes to convert occupied costmap2d cells to primitive types.
+
+Package: ros-noetic-depthai-ros
+Version: 2.11.2-1focal.20250411.104500
+Architecture: arm64
+Maintainer: Adam Serafin <adam.serafin@luxonis.com>
+Installed-Size: 20
+Depends: ros-noetic-depthai, ros-noetic-depthai-bridge, ros-noetic-depthai-descriptions, ros-noetic-depthai-examples, ros-noetic-depthai-filters, ros-noetic-depthai-ros-driver, ros-noetic-depthai-ros-msgs
+Filename: ./ros-noetic-depthai-ros_2.11.2-1focal.20250411.104500_arm64.deb
+Size: 4072
+MD5sum: 199f56a71763c0caf4255ea91fe4d461
+SHA1: 38bd655c3db46c0d8b8fd6fcaaf73c1db6383975
+SHA256: 86162b01019fbe487256dc7ea98fae593a51cf1991c3cf52c26851820602a7e0
+Section: misc
+Priority: optional
+Description: The depthai-ros package
+
+Package: ros-noetic-dwa-local-planner
+Version: 1.17.3-1focal.20250411.083045
+Architecture: arm64
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Installed-Size: 530
+Depends: libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libeigen3-dev, ros-noetic-base-local-planner, ros-noetic-costmap-2d, ros-noetic-dynamic-reconfigure, ros-noetic-nav-core, ros-noetic-nav-msgs, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-tf2, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-ros
+Filename: ./ros-noetic-dwa-local-planner_1.17.3-1focal.20250411.083045_arm64.deb
+Size: 110680
+MD5sum: 19a883fb965169085e9542c6609eed03
+SHA1: 90118c527ecc02013b256d8b7ed66a145ef006a5
+SHA256: 8b20a9e4116d6e490a125e13f5c4856df017156a52784fd760f6d348bb165dad
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/dwa_local_planner
+Description: This package provides an implementation of the Dynamic Window Approach to local robot navigation on a plane.
+ Given a global plan to follow and a costmap, the local planner produces velocity commands to send to a mobile base. This package supports any robot who's footprint can be represented as a convex polygon or cicrle, and exposes its configuration as ROS parameters that can be set in a launch file. The parameters for this planner are also dynamically reconfigurable. This package's ROS wrapper adheres to the BaseLocalPlanner interface specified in the nav_core package.
+
+Package: ros-noetic-global-planner
+Version: 1.17.3-1focal.20250411.082934
+Architecture: arm64
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Installed-Size: 651
+Depends: libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), ros-noetic-costmap-2d, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-nav-core, ros-noetic-nav-msgs, ros-noetic-navfn, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-tf2-ros
+Filename: ./ros-noetic-global-planner_1.17.3-1focal.20250411.082934_arm64.deb
+Size: 134488
+MD5sum: c772c6e24318c62482d7cc14ce33e36f
+SHA1: 866294fec879711f1fdfd1db451e194d0c7198f5
+SHA256: 8f428550d4c0294d1ea71d8e3f2fc7517c3f083c43f78e010e2e7e822bdf6ba6
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/global_planner
+Description: A path planner library and node.
+
+Package: ros-noetic-husky-description
+Version: 0.6.10-1focal.20250411.094554
+Architecture: arm64
+Maintainer: Tony Baltovski <tbaltovski@clearpathrobotics.com>
+Installed-Size: 8783
+Depends: ros-noetic-cpr-onav-description, ros-noetic-fath-pivot-mount-description, ros-noetic-flir-camera-description, ros-noetic-lms1xx, ros-noetic-realsense2-description, ros-noetic-urdf, ros-noetic-velodyne-description, ros-noetic-xacro
+Filename: ./ros-noetic-husky-description_0.6.10-1focal.20250411.094554_arm64.deb
+Size: 1525904
+MD5sum: 5c5b982b85953005c3770a1b9a6fdfa8
+SHA1: e14c194d12e482457980d2b9b2c8d589a90c1bae
+SHA256: cc724e5cf396c55ae464a15e565da3d7a82b112fcf71811e17315a0f75ec97ad
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/husky_description
+Description: Clearpath Husky URDF description
+
+Package: ros-noetic-jsk-rviz-plugins
+Version: 2.1.10-1focal.20250411.105710
+Architecture: arm64
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Installed-Size: 8039
+Depends: libboost-filesystem1.71.0, libboost-thread1.71.0, libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libogre-1.9.0v5 (>= 1.9.0+dfsg1-9~), libopencv-core4.2 (>= 4.2.0+dfsg), libopencv-imgproc4.2 (>= 4.2.0+dfsg), libopencv-videoio4.2 (>= 4.2.0+dfsg), libqt5core5a (>= 5.5.0), libqt5gui5 (>= 5.3.0) | libqt5gui5-gles (>= 5.3.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 9), python3-scipy, ros-noetic-cv-bridge, ros-noetic-diagnostic-msgs, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-image-geometry, ros-noetic-image-publisher, ros-noetic-jsk-footstep-msgs, ros-noetic-jsk-gui-msgs, ros-noetic-jsk-hark-msgs, ros-noetic-jsk-recognition-msgs, ros-noetic-jsk-recognition-utils, ros-noetic-jsk-topic-tools, ros-noetic-message-generation, ros-noetic-people-msgs, ros-noetic-posedetection-msgs, ros-noetic-rviz, ros-noetic-std-msgs, ros-noetic-urdfdom-py, ros-noetic-view-controller-msgs
+Filename: ./ros-noetic-jsk-rviz-plugins_2.1.10-1focal.20250411.105710_arm64.deb
+Size: 2057932
+MD5sum: 3ed0789efb55d46829cf8635fe03365a
+SHA1: df0a7634f5fa361e125bb2773faf7270216811d2
+SHA256: a8eab4cb2789c8fcaca91ed1a2218023910486f96c5ab59f99b8744d047e4dbc
+Section: misc
+Priority: optional
+Homepage: https://jsk-visualization.readthedocs.io/en/latest/jsk_rviz_plugins/index.html
+Description: The jsk_rviz_plugins package
+
+Package: ros-noetic-map-server
+Version: 1.17.3-1focal.20250411.020553
+Architecture: arm64
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Installed-Size: 300
+Depends: libboost-filesystem1.71.0, libc6 (>= 2.17), libgcc-s1 (>= 3.0), libsdl-image1.2 (>= 1.2.10), libsdl1.2debian (>= 1.2.11), libstdc++6 (>= 5.2), libyaml-cpp0.6 (>= 0.6.2), libbullet-dev, libsdl-image1.2-dev, libsdl1.2-dev, libyaml-cpp-dev, ros-noetic-nav-msgs, ros-noetic-roscpp, ros-noetic-tf2
+Filename: ./ros-noetic-map-server_1.17.3-1focal.20250411.020553_arm64.deb
+Size: 71636
+MD5sum: 7e2e513afeee645c1b80a6678fbaeea5
+SHA1: 0add614fa99d8a6f38f8757cf9f2d959499e119a
+SHA256: 531b97a5afc68365816444a11ea552a6257d66b4fada1885e86d76b204b762a1
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/map_server
+Description: map_server provides the map_server ROS Node, which offers map data as a ROS Service.
+ It also provides the map_saver command-line utility, which allows dynamically generated maps to be saved to file.
+
+Package: ros-noetic-mbf-costmap-core
+Version: 0.4.0-1focal.20250411.082435
+Architecture: arm64
+Maintainer: Sebastian Pütz <spuetz@uos.de>
+Installed-Size: 46
+Depends: ros-noetic-costmap-2d, ros-noetic-geometry-msgs, ros-noetic-mbf-abstract-core, ros-noetic-mbf-utility, ros-noetic-nav-core, ros-noetic-std-msgs, ros-noetic-tf
+Filename: ./ros-noetic-mbf-costmap-core_0.4.0-1focal.20250411.082435_arm64.deb
+Size: 8372
+MD5sum: 3ee713fbab5db280e36cf86426388d43
+SHA1: 640797ae2cfd51dbf443fc7dc24f9bb834083e03
+SHA256: 617ec7ac41e2a4cfc66078fda99e2c3d57aa3e05a02b06bbf7b4f14245d35052
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/move_base_flex/mbf_costmap_core
+Description: This package provides common interfaces for navigation specific robot actions.
+ It contains the CostmapPlanner, CostmapController and CostmapRecovery interfaces. The interfaces have to be implemented by the plugins to make them available for Move Base Flex using the mbf_costmap_nav navigation implementation. That implementation inherits the mbf_abstract_nav implementation and binds the system to a local and a global costmap.
+
+Package: ros-noetic-mbf-costmap-nav
+Version: 0.4.0-1focal.20250411.084041
+Architecture: arm64
+Maintainer: Sebastian Pütz <spuetz@uos.de>
+Installed-Size: 1238
+Depends: libboost-filesystem1.71.0, libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 9), libtinyxml2-6a (>= 5.0.0), ros-noetic-actionlib, ros-noetic-actionlib-msgs, ros-noetic-costmap-2d, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-mbf-abstract-nav, ros-noetic-mbf-costmap-core, ros-noetic-mbf-msgs, ros-noetic-mbf-utility, ros-noetic-move-base, ros-noetic-move-base-msgs, ros-noetic-nav-core, ros-noetic-nav-msgs, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-std-msgs, ros-noetic-std-srvs, ros-noetic-tf
+Filename: ./ros-noetic-mbf-costmap-nav_0.4.0-1focal.20250411.084041_arm64.deb
+Size: 216132
+MD5sum: a38d3bdbde436d4c946c9015e88e9d5f
+SHA1: 0465f8db4413cba1f647c80686016fac35b76092
+SHA256: 15c4e8578b6800e445585e21622b2d822ff273f2cd6ce74de2c355d25fe7e459
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/move_base_flex
+Description: The mbf_costmap_nav package contains the costmap navigation server implementation of Move Base Flex (MBF).
+ The costmap navigation server is bound to the costmap_2d representation. It provides the Actions for planning, controlling and recovering. At the time of start MBF loads all defined plugins. Therefor, it loads all plugins which are defined in the lists *planners*, *controllers* and *recovery_behaviors*. Each list holds a pair of a *name* and a *type*. The *type* defines which kind of plugin to load. The *name* defines under which name the plugin should be callable by the actions. Additionally the mbf_costmap_nav package comes with a wrapper for the old navigation stack and the plugins which inherits from the nav_core base classes. Preferably it tries to load plugins for the new API. However, plugins could even support both move_base and move_base_flex by inheriting both base class interfaces located in the nav_core package and in the mbf_costmap_core package.
+
+Package: ros-noetic-mbf-msgs
+Version: 0.4.0-1focal.20250411.014542
+Architecture: arm64
+Maintainer: Jorge Santos <santos@magazino.eu>
+Installed-Size: 2349
+Depends: ros-noetic-actionlib-msgs, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-nav-msgs, ros-noetic-std-msgs
+Filename: ./ros-noetic-mbf-msgs_0.4.0-1focal.20250411.014542_arm64.deb
+Size: 98592
+MD5sum: 61246bcdda08cf9bf1b18f5eb954c513
+SHA1: 1315c2fa82b90da2d0553c3c99e26a7b0853c76a
+SHA256: 877716381730b678aebafdce90bb85ac1938fede754a96ace6eb355b3cd7245b
+Section: misc
+Priority: optional
+Description: The move_base_flex messages package providing the action definition files for the action GetPath, ExePath, Recovery and MoveBase.
+ The action servers providing these action are implemented in mbf_abstract_nav.
+
+Package: ros-noetic-move-base
+Version: 1.17.3-1focal.20250411.083616
+Architecture: arm64
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Installed-Size: 1118
+Depends: libboost-filesystem1.71.0, libboost-thread1.71.0, libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libtinyxml2-6a (>= 5.0.0), ros-noetic-actionlib, ros-noetic-base-local-planner, ros-noetic-clear-costmap-recovery, ros-noetic-costmap-2d, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-move-base-msgs, ros-noetic-nav-core, ros-noetic-nav-msgs, ros-noetic-navfn, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-rotate-recovery, ros-noetic-std-srvs, ros-noetic-tf2-ros, ros-noetic-visualization-msgs
+Filename: ./ros-noetic-move-base_1.17.3-1focal.20250411.083616_arm64.deb
+Size: 224464
+MD5sum: 8f66d7130e1b684eaf1b3cfb25c9e349
+SHA1: c82d02f57b2296b12d5504d03a1e3dab8ab86ec0
+SHA256: 4d4722bdd21b98b3cb8488182342ad54bb7f5294870ff03d5acee17005590f02
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/move_base
+Description: The move_base package provides an implementation of an action (see the actionlib package) that, given a goal in the world, will attempt to reach it with a mobile base.
+ The move_base node links together a global and local planner to accomplish its global navigation task. It supports any global planner adhering to the nav_core::BaseGlobalPlanner interface specified in the nav_core package and any local planner adhering to the nav_core::BaseLocalPlanner interface specified in the nav_core package. The move_base node also maintains two costmaps, one for the global planner, and one for a local planner (see the costmap_2d package) that are used to accomplish navigation tasks.
+
+Package: ros-noetic-nav-core
+Version: 1.17.3-1focal.20250411.082012
+Architecture: arm64
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Installed-Size: 47
+Depends: ros-noetic-costmap-2d, ros-noetic-geometry-msgs, ros-noetic-std-msgs, ros-noetic-tf2-ros
+Filename: ./ros-noetic-nav-core_1.17.3-1focal.20250411.082012_arm64.deb
+Size: 8760
+MD5sum: 106923fd653409c826340c144d68cbd2
+SHA1: 242be07cd78bc3d63edaa41598258337d5172f63
+SHA256: d4787b0667ecdaf87b20b870d2a476e8bf968f65d257bc69649f1f804dd5dec6
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/nav_core
+Description: This package provides common interfaces for navigation specific robot actions.
+ Currently, this package provides the BaseGlobalPlanner, BaseLocalPlanner, and RecoveryBehavior interfaces, which can be used to build actions that can easily swap their planner, local controller, or recovery behavior for new versions adhering to the same interface.
+
+Package: ros-noetic-pointcloud-to-laserscan
+Version: 1.4.1-1focal.20250411.081231
+Architecture: arm64
+Maintainer: Paul Bovbel <paul@bovbel.com>
+Installed-Size: 855
+Depends: libboost-thread1.71.0, libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 9), ros-noetic-laser-geometry, ros-noetic-message-filters, ros-noetic-nodelet, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-tf2, ros-noetic-tf2-ros, ros-noetic-tf2-sensor-msgs
+Filename: ./ros-noetic-pointcloud-to-laserscan_1.4.1-1focal.20250411.081231_arm64.deb
+Size: 136236
+MD5sum: d219d77f6d1b223b7b68871cee756b9e
+SHA1: 624e2bd1bee0a0e3e9367fc0d3eefa3b0865bc8f
+SHA256: c3c6380c7b1104ed05df30ace5d29701900e6d0b2b4ff3620cc97f9874cf0b30
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/perception_pcl
+Description: Converts a 3D Point Cloud into a 2D laser scan.
+ This is useful for making devices like the Kinect appear like a laser scanner for 2D-based algorithms (e.g. laser-based SLAM).
+
+Package: ros-noetic-pose-follower
+Version: 0.4.1-1focal.20250411.083221
+Architecture: arm64
+Maintainer: Martin Günther <martin.guenther@dfki.de>
+Installed-Size: 452
+Depends: libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), ros-noetic-base-local-planner, ros-noetic-costmap-2d, ros-noetic-dynamic-reconfigure, ros-noetic-nav-core, ros-noetic-nav-msgs, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-ros
+Filename: ./ros-noetic-pose-follower_0.4.1-1focal.20250411.083221_arm64.deb
+Size: 97640
+MD5sum: c121eaafb5efb400b73cba721809f8df
+SHA1: 27f94221e41df3da0b89ffff20bb2c39e3307089
+SHA256: 7f82f6b970d82a9e629e9fc5d7daee12be3c129be1223899c4908da9e006a01a
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/pose_follower
+Description: A implementation of a local planner that attempts to follow a plan as closely as possible.
+
+Package: ros-noetic-realsense2-description
+Version: 2.3.2-1focal.20250411.022220
+Architecture: arm64
+Maintainer: Doron Hirshberg <doron.hirshberg@intel.com>
+Installed-Size: 71507
+Depends: ros-noetic-xacro
+Filename: ./ros-noetic-realsense2-description_2.3.2-1focal.20250411.022220_arm64.deb
+Size: 9473568
+MD5sum: 2f27c2b8ff3bb01d5772fddb2202b3e9
+SHA1: 79f6f9c2576d8ec68bc8bc1b26e84d5b11a9e0ec
+SHA256: d53624a26466cae23b058d0525443d795499185d5da8b7348d0a4f9e6f9d3561
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/RealSense
+Description: RealSense Camera description package for Intel 3D D400 cameras
+
+Package: ros-noetic-robot-localization
+Version: 2.7.7-1focal.20250411.075848
+Architecture: arm64
+Maintainer: Tom Moore <ayrton04@gmail.com>
+Installed-Size: 3118
+Depends: libc6 (>= 2.17), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libgeographic19 (>= 1.43), libstdc++6 (>= 9), libyaml-cpp0.6 (>= 0.6.2), libeigen3-dev, libgeographic-dev, libyaml-cpp-dev, ros-noetic-angles, ros-noetic-cmake-modules, ros-noetic-diagnostic-msgs, ros-noetic-diagnostic-updater, ros-noetic-eigen-conversions, ros-noetic-geographic-msgs, ros-noetic-geometry-msgs, ros-noetic-message-filters, ros-noetic-message-runtime, ros-noetic-nav-msgs, ros-noetic-nodelet, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-std-srvs, ros-noetic-tf2, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-ros
+Filename: ./ros-noetic-robot-localization_2.7.7-1focal.20250411.075848_arm64.deb
+Size: 491860
+MD5sum: 7d12541d597bd513b011924f247be8ae
+SHA1: acb137cb828e2f6c736e53a9cf2289f5db82a2e4
+SHA256: e66aa1b88c7a24573766e7d6f9e3d10e3fd396131c1310f1c4d421691b0aab1a
+Section: misc
+Priority: optional
+Homepage: http://ros.org/wiki/robot_localization
+Description: Provides nonlinear state estimation through sensor fusion of an abritrary number of sensors.
+
+Package: ros-noetic-spatio-temporal-voxel-layer
+Version: 1.4.5-1focal.20250411.103446
+Architecture: arm64
+Maintainer: Steve Macenski <stevenmacenski@gmail.com>
+Installed-Size: 1286
+Depends: libboost-thread1.71.0, libc6 (>= 2.29), libconsole-bridge0.4, libgcc-s1 (>= 3.0), libopenvdb6.2, libpcl-common1.10 (>= 1.10.0+dfsg), libpcl-filters1.10 (>= 1.10.0+dfsg), libpcl-segmentation1.10 (>= 1.10.0+dfsg), libstdc++6 (>= 9), libtbb2 (>= 2020.1), libilmbase-dev, libopenexr-dev, libopenvdb-dev, libtbb-dev, ros-noetic-costmap-2d, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-laser-geometry, ros-noetic-message-filters, ros-noetic-pcl-conversions, ros-noetic-pcl-ros, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-std-msgs, ros-noetic-tf2-geometry-msgs, ros-noetic-tf2-ros, ros-noetic-visualization-msgs
+Filename: ./ros-noetic-spatio-temporal-voxel-layer_1.4.5-1focal.20250411.103446_arm64.deb
+Size: 267936
+MD5sum: c7363d2a623eea1bd2d6a0ea8ac96b65
+SHA1: 1bf8abb839d5a3ed4fee473440dd476b0a98c42a
+SHA256: 6bb474ac0316af4c30d9a3352fc8aa2f5b4d6ff5845597486d83043163c75af2
+Section: misc
+Priority: optional
+Description: The spatio-temporal 3D obstacle costmap package
+
+Package: ros-noetic-teb-local-planner
+Version: 0.9.1-1focal.20250411.083256
+Architecture: arm64
+Maintainer: Christoph Rösmann <christoph.roesmann@tu-dortmund.de>
+Installed-Size: 3282
+Depends: libboost-filesystem1.71.0, libboost-thread1.71.0, libc6 (>= 2.29), libconsole-bridge0.4, libcxsparse3 (>= 1:4.5.2), libgcc-s1 (>= 4.5), libstdc++6 (>= 9), libtinyxml2-6a (>= 5.0.0), ros-noetic-base-local-planner, ros-noetic-costmap-2d, ros-noetic-costmap-converter, ros-noetic-dynamic-reconfigure, ros-noetic-geometry-msgs, ros-noetic-interactive-markers, ros-noetic-libg2o, ros-noetic-mbf-costmap-core, ros-noetic-mbf-msgs, ros-noetic-message-runtime, ros-noetic-nav-core, ros-noetic-nav-msgs, ros-noetic-pluginlib, ros-noetic-roscpp, ros-noetic-std-msgs, ros-noetic-tf2, ros-noetic-tf2-ros, ros-noetic-visualization-msgs
+Filename: ./ros-noetic-teb-local-planner_0.9.1-1focal.20250411.083256_arm64.deb
+Size: 581008
+MD5sum: 1e013ecf4a6e70a985f14231cfaccb20
+SHA1: e5006e9439d0aad7c0c6223f6f2e7c8ed9159a6f
+SHA256: 978f8eb71fd0380ee4fa8d54c6ee0148ed0be54d63727f27fba8ca59d018fe9c
+Section: misc
+Priority: optional
+Homepage: http://wiki.ros.org/teb_local_planner
+Description: The teb_local_planner package implements a plugin to the base_local_planner of the 2D navigation stack.
+ The underlying method called Timed Elastic Band locally optimizes the robot's trajectory with respect to trajectory execution time, separation from obstacles and compliance with kinodynamic constraints at runtime.
+
+Package: ros-noetic-tf2-tools
+Version: 0.7.8-1focal.20250411.071531
+Architecture: arm64
+Maintainer: Tully Foote <tfoote@osrfoundation.org>
+Installed-Size: 46
+Depends: ros-noetic-tf2, ros-noetic-tf2-msgs, ros-noetic-tf2-ros
+Filename: ./ros-noetic-tf2-tools_0.7.8-1focal.20250411.071531_arm64.deb
+Size: 10904
+MD5sum: 1b161d33479e60b4f4b95ce6b68efcd8
+SHA1: 758bac6c74831524c7c7a0901ed275fce52ac833
+SHA256: 1f9363aff0d81b945e76bce604f2fd7108810711911ab1ef0e9642432d81f5ca
+Section: misc
+Priority: optional
+Homepage: http://www.ros.org/wiki/tf2_tools
+Description: tf2_tools
+
+Package: software-properties-common
+Source: software-properties
+Version: 0.99.9.12
+Architecture: all
+Maintainer: Michael Vogt <michael.vogt@ubuntu.com>
+Installed-Size: 196
+Depends: ca-certificates, gir1.2-glib-2.0, gir1.2-packagekitglib-1.0 (>= 1.1.0-2), packagekit, python-apt-common (>= 0.9), python3, python3-dbus, python3-gi, python3-requests-unixsocket, python3-software-properties (= 0.99.9.12), python3:any
+Breaks: python-software-properties (<< 0.85), python3-software-properties (<< 0.85)
+Replaces: python-software-properties (<< 0.85), python3-software-properties (<< 0.85)
+Filename: ./software-properties-common_0.99.9.12_all.deb
+Size: 10432
+MD5sum: 2ab3b6ec154eb76c6faf28b80c777120
+SHA1: ff153596ca678d151028b0dccdbcb0ed9d3ede36
+SHA256: 520d96ad09b2ed312c0bf1581a40d6a370eb440b9a7a389ca72bc7fe87e6d2f8
+Section: admin
+Priority: optional
+Description: manage the repositories that you install software from (common)
+ This software provides an abstraction of the used apt repositories.
+ It allows you to easily manage your distribution and independent software
+ vendor software sources.
+ .
+ This package contains the common files for software-properties like the
+ D-Bus backend.
+
+Package: tmuxinator
+Version: 1.1.4-3
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 102
+Depends: ruby | ruby-interpreter, ruby-erubis, ruby-thor, ruby-xdg, tmux
+Enhances: tmux
+Filename: ./tmuxinator_1.1.4-3_all.deb
+Size: 17484
+MD5sum: 893cef8bdde34a23b02997d10cba8ec0
+SHA1: c035fe7212ef86d4c2151ff2a9e5cd1ac6d64f25
+SHA256: 2d6dc80eb0c02bc9d4e78864ea22d9630adb822c53eacf3a46d758aecb0f4efa
+Section: utils
+Priority: optional
+Homepage: https://github.com/tmuxinator/tmuxinator
+Description: Create and manage tmux sessions easily
+ Tmuxinator is management tool of tmux sessions.
+Original-Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Ruby-Versions: all
+
+Package: websockify
+Version: 0.9.0-0ubuntu2
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 53
+Depends: python3-numpy, python3-websockify (>= 0.9.0-0ubuntu2), python3 (<< 3.9), python3 (>= 3.8~), libc6 (>= 2.17)
+Filename: ./websockify_0.9.0-0ubuntu2_arm64.deb
+Size: 18056
+MD5sum: 377381a7e3d57d196730c41b276bbe93
+SHA1: e7cd4d5a9a269b9af89b2f341cb9075be1a23f9b
+SHA256: 8289aa3cfef593fa44b09145e16df631e9a542e1a57c315ce1354032760e7753
+Section: python
+Priority: optional
+Homepage: https://pypi.python.org/pypi/websockify
+Description: WebSockets support for any application/server
+ websockify was formerly named wsproxy and was part of the noVNC project.
+ .
+ At the most basic level, websockify just translates WebSockets traffic to
+ normal socket traffic. Websockify accepts the WebSockets handshake, parses it,
+ and then begins forwarding traffic between the client and the target in both
+ directions.
+ .
+ Websockify supports all versions of the WebSockets protocol (Hixie and HyBi).
+ The older Hixie versions of the protocol only support UTF-8 text payloads. In
+ order to transport binary data over UTF-8 an encoding must used to encapsulate
+ the data within UTF-8.
+ .
+ With Hixie clients, Websockify uses base64 to encode all traffic to and from
+ the client. This does not affect the data between websockify and the server.
+ .
+ With HyBi clients, websockify negotiates whether to base64 encode traffic to
+ and from the client via the subprotocol header (Sec-WebSocket-Protocol). The
+ valid subprotocol values are 'binary' and 'base64' and if the client sends
+ both then the server (the Python implementation) will prefer 'binary'. The
+ 'binary' subprotocol indicates that the data will be sent raw using binary
+ WebSocket frames. Some HyBi clients (such as the Flash fallback and older
+ Chrome and iOS versions) do not support binary data which is why the
+ negotiation is necessary.
+Original-Maintainer: Debian OpenStack <openstack-devel@lists.alioth.debian.org>
+
+Package: x11-xserver-utils
+Version: 7.7+8
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 485
+Depends: libc6 (>= 2.26), libice6 (>= 1:1.0.0), libx11-6, libxaw7, libxcursor1 (>> 1.1.2), libxext6, libxi6, libxmu6, libxmuu1, libxrandr2 (>= 2:1.5.0), libxt6, libxxf86vm1, cpp
+Suggests: nickle, cairo-5c, xorg-docs-core
+Conflicts: iceauth, sessreg, xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xvidtune
+Breaks: arandr (<< 0.1.9)
+Replaces: iceauth, sessreg, xbase-clients (<< 1:7.3), xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xutils (<< 1:7.2), xvidtune
+Filename: ./x11-xserver-utils_7.7+8_arm64.deb
+Size: 146812
+MD5sum: 67815f074f642fc96c274b958a82864b
+SHA1: 84310da1b1fcc880c8a067a403a1357cb7d18e8a
+SHA256: c02c7ecd9f068996198d77392d5ec57a74ca522483c5f1474e39ebc0f141dadc
+Section: x11
+Priority: optional
+Description: X server utilities
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of X Server utilities
+ that ship with the X Window System, including:
+  - iceauth, a tool for manipulating ICE protocol authorization records;
+  - rgb;
+  - sessreg, a simple program for managing utmp/wtmp entries;
+  - xcmsdb, a device color characteristic utility for the X Color Management
+    System;
+  - xgamma, a tool for querying and setting a monitor's gamma correction;
+  - xhost, a very dangerous program that you should never use;
+  - xmodmap, a utility for modifying keymaps and pointer button mappings in X;
+  - xrandr, a command-line interface to the RandR extension;
+  - xrdb, a tool to manage the X server resource database;
+  - xrefresh, a tool that forces a redraw of the X screen;
+  - xset, a tool for setting miscellaneous X server parameters;
+  - xsetmode and xsetpointer, tools for handling X Input devices;
+  - xsetroot, a tool for tailoring the appearance of the root window;
+  - xstdcmap, a utility to selectively define standard colormap properties;
+  - xvidtune, a tool for customizing X server modelines for your monitor.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: x11vnc
+Version: 0.9.16-3
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 2213
+Depends: openssl, tk, libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.17), libssl1.1 (>= 1.1.0), libvncclient1 (>= 0.9.10), libvncserver1 (>= 0.9.10), libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2, libxtst6
+Replaces: x11vnc-data
+Filename: ./x11vnc_0.9.16-3_arm64.deb
+Size: 977204
+MD5sum: c8705a2796136f656ba7e7d7812468eb
+SHA1: 81b4893e62e8165e153d4c3e916823bec04d6048
+SHA256: c4f5e7dfd4440c5d0916287aeb957a6789ec7ae52d6e9f0db5ede307a7f36840
+Section: x11
+Priority: optional
+Homepage: http://www.karlrunge.com/x11vnc/
+Description: VNC server to allow remote access to an existing X session
+ x11vnc allows one to view remotely and interact with real X displays (i.e. a
+ display corresponding to a physical monitor, keyboard, and mouse) with any
+ VNC viewer. It has built-in SSL encryption and authentication, UNIX account
+ and password support, server-side scaling, single port HTTPS and VNC, mDNS
+ service advertising, and TightVNC and UltraVNC file-transfer.
+Original-Maintainer: Debian Remote Maintainers <debian-remote@lists.debian.org>
+
+Package: xauth
+Version: 1:1.1-0ubuntu1
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 73
+Depends: libc6 (>= 2.17), libx11-6, libxau6, libxext6, libxmuu1
+Filename: ./xauth_1%3a1.1-0ubuntu1_arm64.deb
+Size: 24084
+MD5sum: 9883c47869227fd1241cb3f93866a6b8
+SHA1: 4c858d4db523c5e206cd059dbefdeccb4979e42f
+SHA256: 8a29f5d71020b795729f4f93afdaf1c722cb25abd4d0a66e545080c1f8a7609c
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Description: X authentication utility
+ xauth is a small utility to read and manipulate Xauthority files, which
+ are used by servers and clients alike to control authentication and access
+ to X sessions.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: xfce4
+Version: 4.14
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 16
+Depends: libxfce4ui-utils (>= 4.14), thunar (>= 1.8.9), xfce4-appfinder (>= 4.14.0), xfce4-panel (>= 4.14.0), xfce4-pulseaudio-plugin, xfce4-session (>= 4.14.0), xfce4-settings (>= 4.14.0), xfconf (>= 4.14.0), xfdesktop4 (>= 4.14.0), xfwm4 (>= 4.14.0)
+Recommends: desktop-base (>= 5.0.4), tango-icon-theme (>= 0.8.90), thunar-volman (>= 0.9.5), xfce4-notifyd, xorg
+Suggests: xfce4-goodies, xfce4-power-manager (>= 1.6.5)
+Filename: ./xfce4_4.14_all.deb
+Size: 4980
+MD5sum: 79eab4c89cb99abafa6ae8f936ebc2f1
+SHA1: 7b43009322bcb7aa4f62ca23f8d161d2e23f5334
+SHA256: 2fec25b1809ae09751c4cd7c1f3ea322bfbbff161449d01bf6d3ed594e2166e9
+Section: metapackages
+Priority: optional
+Homepage: https://www.xfce.org/
+Description: Meta-package for the Xfce Lightweight Desktop Environment
+ Xfce is a lightweight desktop environment for unix-like operating systems.
+ It aims to be fast and lightweight, while still being visually appealing and
+ easy to use.  Designed for productivity, it loads and executes applications
+ fast, while conserving system resources.
+ .
+ This package is a metapackage; it depends on the core packages of the Xfce4
+ desktop environment and recommends some extra Xfce4 packages.  If you intend
+ to use Xfce4 and want the full experience then installing this package and the
+ packages it Recommends is a great place to start.
+ .
+ If you just want to pick and choose the core components then feel free to
+ remove this package.
+Original-Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+
+Package: xfce4-terminal
+Version: 0.8.9.1-1
+Architecture: arm64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 2256
+Depends: exo-utils, libc6 (>= 2.17), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.21.5), libpango-1.0-0 (>= 1.14.0), libutempter0 (>= 1.1.5), libvte-2.91-0 (>= 0.51.90), libx11-6, libxfce4ui-2-0 (>= 4.11.0), libxfce4util7 (>= 4.9.0), libxfconf-0-3 (>= 4.6.0)
+Recommends: default-dbus-session-bus | dbus-session-bus
+Provides: x-terminal-emulator
+Filename: ./xfce4-terminal_0.8.9.1-1_arm64.deb
+Size: 371884
+MD5sum: a9fa83343f9a5b40aca33c59a52ccce7
+SHA1: 4d9c4b43980b9cd8a89d09eef9521b40100eeeec
+SHA256: e80ac769878fa1c49838a7f69b328d6886ca244ab64a5f9b8dbe0718d4261062
+Section: xfce
+Priority: optional
+Homepage: http://goodies.xfce.org/projects/applications/terminal
+Description: Xfce terminal emulator
+ This package contains Terminal, which is a lightweight and easy to use
+ terminal emulator for X11. It was created to fit nicely into the Xfce
+ desktop environment, but it also fits nice with other environments.
+Original-Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+
+Package: xvfb
+Source: xorg-server
+Version: 2:1.20.13-1ubuntu1~20.04.20
+Architecture: arm64
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Installed-Size: 2215
+Depends: xserver-common (>= 2:1.20.13-1ubuntu1~20.04.20), libaudit1 (>= 1:2.2.1), libbsd0 (>= 0.7.0), libc6 (>= 2.29), libgcrypt20 (>= 1.8.0), libgl1, libpixman-1-0 (>= 0.30.0), libselinux1 (>= 2.0.82), libsystemd0, libunwind8, libxau6, libxdmcp6, libxfont2 (>= 1:2.0.1), xauth, x11-xkb-utils
+Recommends: libgl1-mesa-dri
+Provides: xserver
+Filename: ./xvfb_2%3a1.20.13-1ubuntu1~20.04.20_arm64.deb
+Size: 728028
+MD5sum: ebd542b4c8fb003c516d76aad88f6ad1
+SHA1: 07d914278a60ebf9b50115845b447aaf92145e1a
+SHA256: 98b2defee09fc26fa8afd14a3b0477fcdd7007f7caac92734178fb7f0d5921bf
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.x.org/
+Description: Virtual Framebuffer 'fake' X server
+ Xvfb provides an X server that can run on machines with no display hardware
+ and no physical input devices. It emulates a dumb framebuffer using virtual
+ memory. The primary use of this server was intended to be server testing,
+ but other novel uses for it have been found, including testing clients
+ against unusual depths and screen configurations, doing batch processing with
+ Xvfb as a background rendering engine, load testing, as an aid to porting the
+ X server to a new platform, and providing an unobtrusive way to run
+ applications that don't really need an X server but insist on having one
+ anyway.
+ .
+ This package also contains a convenience script called xvfb-run which
+ simplifies the automated execution of X clients in a virtual server
+ environment. This convenience script requires the use of the xauth
+ program.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
